@@ -1,0 +1,23 @@
+version: '3.7'
+
+
+services:
+
+  jupyter:
+    build: jupyter
+    container_name: 'jupyter'
+    ports:
+      - 8887:8887
+    volumes:
+      - ./jupyter:/app
+    env_file:
+      - .env
+    command: bash -c ". /app/start.sh"
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "10m"
+
+
+

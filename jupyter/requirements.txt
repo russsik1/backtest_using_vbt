@@ -1,0 +1,13 @@
+pandas
+numpy
+numba
+pydantic[email]
+requests
+wheel
+TA-Lib==0.4.25
+jupyter-resource-usage
+jupyter
+notebook
+openpyxl
+matplotlib
+bokeh
